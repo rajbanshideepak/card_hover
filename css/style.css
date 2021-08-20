@@ -31,6 +31,7 @@ body {
   /* border: 1px solid black; */
   border-radius: 20px;
 }
+
 .model {
   max-width: 90%;
   position: relative;
@@ -59,7 +60,13 @@ body {
 .model img {
   width: 12rem;
   z-index: 100;
-  animation: alive 3s 1s infinite;
+  animation: alive 3s 1s infinite normal;
+}
+.card:hover img {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
 }
 @keyframes alive {
   0% {

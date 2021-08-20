@@ -13,7 +13,7 @@ card.addEventListener('mouseover',(e)=>{
 })
 card.addEventListener('mouseenter',(e)=>{
     card.style.transition='none'
-    dragon.style.animation= "none";
+    // dragon.style.animation= "none";
     title.style.transform=`translateZ(180px)`;
     title.style.transition='all 0.75s ease-out'
     desc.style.transform=`translateZ(130px)`;
