@@ -8,7 +8,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   perspective: 700px;
 }
 .container {
@@ -67,6 +67,7 @@ body {
   margin-top: 10px;
   color: rgb(5, 56, 39);
   text-transform: capitalize;
+  /* transition: all 0.75s ease-out; */
 }
 .description .title {
   margin: 0;

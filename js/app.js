@@ -14,10 +14,11 @@ card.addEventListener('mouseover',(e)=>{
 card.addEventListener('mouseenter',(e)=>{
     card.style.transition='none'
     title.style.transform=`translateZ(180px)`;
-    title.style.transition='none'
+    title.style.transition='all 0.75s ease-out'
     desc.style.transform=`translateZ(130px)`;
-    desc.style.transition='none'
+    desc.style.transition='all 0.75s ease-out'
     dragon.style.transform=`translateZ(190px) rotateY(45deg)`;
+    dragon.style.transition='all 0.75s ease-out'
 })
 card.addEventListener('mouseleave',(e)=>{
     card.style.transition='all 0.3s ease-in'
@@ -27,4 +28,5 @@ card.addEventListener('mouseleave',(e)=>{
     desc.style.transform=`translateZ(0px)`
     desc.style.transition='all 0.3s ease-in'
     dragon.style.transform=`translateZ(0px) rotateX(0deg)`
+    dragon.style.transition='all 0.3s ease-in'
 })
