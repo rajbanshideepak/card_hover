@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid red;
+  perspective: 700px;
+}
+.container {
+  width: 33%;
+  height: 80vh;
+  /* border: 1px solid pink; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.card {
+  transform-style: preserve-3d;
+  width: 25rem;
+  min-height: 80vh;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.493);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid black; */
+  border-radius: 20px;
+}
+.model {
+  max-width: 90%;
+  position: relative;
+  /* background: pink; */
+}
+.model .circle {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.5);
+  width: 6rem;
+  height: 6rem;
+  /* border: 1px solid red; */
+  border-radius: 50%;
+  z-index: -1;
+}
+.description {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+.model img {
+  width: 12rem;
+  z-index: 100;
+}
+.description h3 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+  color: rgb(5, 56, 39);
+  text-transform: capitalize;
+}
+.description .title {
+  margin: 0;
+  color: rgba(0, 0, 255, 0.698);
+  text-transform: capitalize;
+  font-size: 30px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: bold;
+}
