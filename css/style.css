@@ -59,6 +59,21 @@ body {
 .model img {
   width: 12rem;
   z-index: 100;
+  animation: alive 3s 1s infinite;
+}
+@keyframes alive {
+  0% {
+    transform: scale(1);
+    transition: all 5s linear;
+  }
+  50% {
+    transform: scale(1.1);
+    transition: all 5s linear;
+  }
+  0% {
+    transform: scale(1);
+    transition: all 5s linear;
+  }
 }
 .description h3 {
   font-family: "Times New Roman", Times, serif;
